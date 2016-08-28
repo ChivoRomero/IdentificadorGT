@@ -1,0 +1,140 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Fractal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<script type="text/javascript">
+	function validar() {
+	var phone = document.form.telefono.value
+	
+if(document.form.telefono.value.length == 8)
+{
+	
+    var telefono =  phone.substr(0,2)   
+		
+		 if ((telefono>=30 && telefono<=32)  || (telefono == 40) || (telefono>=45 && telefono<=46)) 
+		 {
+		 		 document.getElementById('logo').src = "Tigo.png"
+				 }
+		 else if(telefono==43 || telefono==34)
+		 {
+				 document.getElementById('logo').src = "movistar.png"
+		 }
+		 else if(telefono==41 || telefono==42)
+		 {
+				  document.getElementById('logo').src = "claro.png"
+		 }
+					
+         else
+		 {
+		  	var telefono =  phone.substr(0,4)
+		   		if((telefono>= 3300 && telefono<=3359) || (telefono>=4476 && telefono<=4499) || (telefono>=4773 && telefono<=4819) || (telefono>=4822 && telefono<=5009) || (telefono>=5030 && telefono<=5069) || (telefono>=5150 && 					telefono<=5209) || (telefono>=5300 && telefono<=5309) || (telefono>=5314 && telefono<=5389) || (telefono>=5520 && telefono<=5529) || (telefono>=5550 && telefono<=5553) || (telefono>=5580 && telefono<=5581) || (					telefono>=5700 && telefono<=5709) || (telefono>=5719 && telefono<=5789) || (telefono>=5800 && telefono<=5809)|| (telefono==5819) || (telefono>=5880 && telefono<=5909)|| (telefono>=5918 && telefono<=5919) || (telefono>=5990 && 			telefono<=5999))
+				{
+				document.getElementById('logo').src = "Tigo.png"
+				}
+				else if((telefono>=5140 && telefono<=5149) || (telefono>=3500 && telefono<=3534) || (telefono>=4400 && telefono<=4475) || (telefono>=5020 && telefono<=5029) || (telefono>=5070 && telefono<=5099) || (telefono>=5100 && telefono<=5109) || (telefono>=5210 && telefono<= 5299) || (telefono>=5312 && telefono<=5313)|| (telefono>=5390 && telefono<=5409) || (telefono>=5500 && telefono<=5509) || (telefono>=5518 && telefono<=5519) || (telefono>=5540 && telefono<=5542) || (telefono>=5545 && telefono<=5549) || (telefono>=5600 && telefono<=5609) || (telefono>=5640 && telefono<=5689) || (telefono>=5790 && telefono<=5799) || (telefono>=5915 && telefono<=5917))
+				{
+				document.getElementById('logo').src = "movistar.png"
+				}
+				else if((telefono>=4700 && telefono<=4772) || (telefono>=5010 && telefono<=5019) || (telefono>=5110 && telefono<=5139) || (telefono>=5310 && telefono<=5311) || (telefono>=5410 && telefono<=5499) || (telefono>=5510 && telefono<=5517) || (telefono>=5530 && telefono<=5539) || (telefono>=5543 && telefono<=5544) || (telefono>=5554 && telefono<=5579) || (telefono>=5582 && telefono<=5599) || (telefono>=5610 && telefono<=5639) ||(telefono>=5690 && telefono<=5699) || (telefono>=5710 && telefono<=5718) || (telefono>=5810 && telefono<=5818) || (telefono>=5820 && telefono<=5879) || (telefono>=5910 && telefono<=5914) || (telefono>=5920 && telefono<=5989))
+				{
+				document.getElementById('logo').src = "claro.png"
+				}
+				else
+				{
+				alert('Este numero no es un celular');
+				}
+				
+					
+		 }
+		 
+}
+else
+{
+alert('Este numero tiene mas de 8 digitos');
+}
+		 
+}</script>
+
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="ie9.css" /><![endif]-->
+	    <style type="text/css">
+<!--
+.Estilo1 {font-size: 18%}
+-->
+        </style>
+</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<h1><a href="#">Identificador GT</a></h1>
+					<p>Basicamente tenes que ingresar tu numero </br> para poder saber a que compañia pertenece </br>y aprovechar tus ilimitadas</a></p>
+					<ul class="actions">
+						<!--<li><a href="#four" class="button icon fa-chevron-down scrolly">Recomendaciones</a></li>-->
+						<li><a href="#one" class="button icon fa-chevron-down scrolly">Iniciar</a></li>
+					</ul>
+				</div>
+				<div class="image phone"><div class="inner"><img src="fondo.jpg" alt="" /></div></div>
+			</header>
+
+		<!-- One -->
+			<section id="one" class="wrapper style2 special">
+				<header class="major">
+					<h2>Bienvenido 
+					</h2>
+					
+Ingrese su Numero de Telefono
+<FORM name="form">
+<TABLE BORDER=0>
+<TR>
+	
+	<TD>
+	<INPUT type=text name="telefono" style="text-align:center" >
+	</TD>
+	<img src="flecha.gif" id="logo"/>
+	</TR>
+
+
+<TR>
+	<TD COLSPAN=2>
+	<INPUT type="button" value="Verificar" onClick="validar()">
+	</TD>
+	
+</TR>
+</TABLE>
+</FORM>
+		
+		
+		
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<!--<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				<p class="copyright">&copy; Untitled. Credits: <a href="http://html5up.net">HTML5 UP</a></p>-->
+			</footer>
+
+		<!-- Scripts -->
+			<script src="jquery.min.js"></script>
+			<script src="jquery.scrolly.min.js"></script>
+			<script src="skel.min.js"></script>
+			<script src="util.js"></script>
+			<!--[if lte IE 8]><script src="respond.min.js"></script><![endif]-->
+			<script src="main.js"></script>
+
+	</body>
+</html>
